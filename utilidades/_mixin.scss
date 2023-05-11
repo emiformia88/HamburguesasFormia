@@ -1,0 +1,38 @@
+//mixin con parametros
+
+@mixin botones ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+//mixin sin parametros
+
+@mixin tamano{
+    width: 100%;
+    height: 80vh;
+}
+
+@mixin tamano2{
+    width: 100%;
+    height: 90vh;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

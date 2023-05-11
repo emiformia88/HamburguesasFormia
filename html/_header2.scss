@@ -1,0 +1,45 @@
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.header2{
+    background: $color-header2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-bottom: solid 2px var($color-principal);
+
+    .header-logo{
+        width: 30%;
+
+        .logo{
+            object-fit: cover;
+            height: 100%;
+            padding: 20px 30px;
+        }   
+    }
+    .nav{
+        width: 70%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 70px;
+
+        .link{
+            text-decoration: none;
+            color: $color-texto-1;
+            margin: 1% 4%;
+            font-weight: 400;
+            font-size: 1.4rem;
+
+            &:hover{
+                color: $color-principal;
+            }
+        }
+        .link.active {
+            color: $color-principal;
+        }            
+                   
+    }
+}

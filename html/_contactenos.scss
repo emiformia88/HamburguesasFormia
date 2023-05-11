@@ -1,0 +1,126 @@
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.contenedor-7{
+    @include tamano;
+    background-color: $color-principal;   
+    color: $color-secundario;
+    width: 100%;
+    @include col;
+    position: relative;
+
+    .mapa{
+        @include tamano;
+
+        iframe{
+            @include tamano;
+        }        
+    }
+    
+    .formulario{
+        position: absolute;
+        bottom: 2vh;
+        background-color: $color-secundario;
+        width: 40%;
+        padding: 15px 15px;
+        border-radius: 10px;
+        border: 1px solid $color-principal;
+
+        h2{
+            color: $color-principal;
+            font-size: 35px;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .form{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .item-1,.item-2{
+                width: 96%;
+                height: 45px;
+                margin: 7px auto;
+                outline:$color-principal;
+            }
+            
+            .item-3{
+                width: 98%;
+                height: 45px;
+                margin: 7px auto;
+                grid-column: 1/3;
+                outline:$color-principal;
+            }
+
+            .textarea{
+                width: 98%;
+                height: 100px;
+                margin: 7px auto;
+                grid-column: 1/3;
+                outline: $color-principal;
+            }
+
+            .submit{
+                width: 30%;
+                height: 45px;
+                margin: 7px auto;
+                grid-column: 1/3;
+            }   
+        }   
+    }    
+}
+
+.contenedor-8{
+    @include tamano;
+    @include col;
+    background-color: $color-secundario;   
+    color: $color-principal;
+
+    .contenedor-8__div{
+        width: 70%;
+        @include col;
+
+        .contenedor-8__titulo{
+            font-size: 48px;
+        }
+        
+        .contenedor-8__parrafo{
+            font-size: 18px;
+            width: 65%;
+            text-align: center;
+            margin: 30px auto;
+        }
+        
+        .contenedor-8__form{
+            width: 100%;
+            @include row;
+
+            .input-email{
+                width: 45%;
+                height: 35px;
+                border-radius: 20px 0 0 20px;
+                border: none;
+                outline: none;
+                padding-left: 20px;
+                font-size: 1rem;
+            }
+            
+            .input-submit{
+                width: 20%;
+                height: 35px;
+                color: #fff;
+                background-color: $color-principal;
+                font-weight: 700;
+                border-radius: 0 20px 20px 0;
+                border: none;
+                outline: none;
+                font-size: 1rem;
+            }  
+        }        
+    }   
+}
+

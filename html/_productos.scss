@@ -1,0 +1,109 @@
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.section_4{
+    width: 100%;
+    @include col;
+    padding-top: 40px;
+    background-color: rgba(245, 222, 179, 0.2);
+
+    .section_4-title{
+        font-family: $font-titillium;
+        font-size: 44px;
+        font-weight: bold;
+        color: $color-principal;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    hr{
+        width: 150px;
+        height: 10px;
+        border: none;
+        background-color: $color-principal;
+        border-radius: 10px;
+    }
+
+}
+
+
+.contenedor-3{
+    background-color: $color-principal;
+    color: $color-secundario;
+    @include tamano2;
+    @include row;
+
+    .contenedor-3__img{
+        width: 35%;
+    }
+
+    .contenedor-3__text{
+        width: 35%;
+
+        h2{
+            font-size: 48px;
+        }
+        
+        p{
+            font-size: 20px;
+            margin: 40px 0px;
+        }
+    
+        a{
+            font-size: 18px;
+            background-color: #fff;
+            color: #f64b3c;
+            border-radius: 22px;
+            padding: 12px 35px;
+            text-decoration: none;
+    
+            &:hover{
+                background-color: #222;
+                color: #fff;
+                transition: 0.2s;
+            }        
+        }    
+    }
+}
+
+.contenedor-4{
+    background-color: rgba(245, 222, 179, 0.2);
+    color: $color-principal;
+    @include tamano2;
+    @include row;
+
+    .contenedor-4__text{
+        width: 35%;
+
+        h2{
+            font-size: 48px;
+        }
+
+        p{
+            font-size: 20px;
+            margin: 40px 0px;
+        }
+
+        a{
+            font-size: 18px;
+            background-color: $color-principal;
+            color: $color-secundario;
+            border-radius: 22px;
+            padding: 12px 35px;
+            text-decoration: none;
+
+            &:hover{
+                background-color: #222;
+                color: #fff;
+                transition: 0.2s;
+            }            
+        }       
+    }
+
+    .contenedor-4__img{
+        width: 35%;
+    }    
+}
+
